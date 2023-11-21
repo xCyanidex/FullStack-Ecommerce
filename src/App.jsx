@@ -11,6 +11,7 @@ import {
 } from "react-router-dom";
 import Products from './Pages/Products';
 import { useEffect } from 'react';
+import Orders from './Pages/Orders';
 
 
     function ScrollToTop() {
@@ -29,14 +30,13 @@ function App() {
   return (
     <>
       <BrowserRouter>
-
-          <ScrollToTop />
-              <NavDrawer>
+        <ScrollToTop />
+        <NavDrawer>
           <Routes>
-            <Route path={"/products"} element={<Products/>}  />
+            <Route path={"/products"} element={<Products />} />
+            <Route path={"/orders"} element={<Orders/>} />
           </Routes>
-              </NavDrawer>
-
+        </NavDrawer>
       </BrowserRouter>
     </>
   );

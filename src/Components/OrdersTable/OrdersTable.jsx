@@ -1,4 +1,5 @@
 
+import avatar from "../../assets/avatar.png"
 export default function OrdersTable() {
   return (
     <div className="overflow-x-auto">
@@ -29,10 +30,7 @@ export default function OrdersTable() {
               <div className="flex items-center gap-3">
                 <div className="avatar">
                   <div className="mask mask-squircle w-12 h-12">
-                    <img
-                      src="/tailwind-css-component-profile-2@56w.png"
-                      alt="Avatar Tailwind CSS Component"
-                    />
+                    <img src={avatar} alt="Avatar" />
                   </div>
                 </div>
                 <div>
@@ -64,10 +62,7 @@ export default function OrdersTable() {
               <div className="flex items-center gap-3">
                 <div className="avatar">
                   <div className="mask mask-squircle w-12 h-12">
-                    <img
-                      src="/tailwind-css-component-profile-3@56w.png"
-                      alt="Avatar Tailwind CSS Component"
-                    />
+                    <img src={avatar} alt="Avatar Tailwind CSS Component" />
                   </div>
                 </div>
                 <div>
@@ -97,10 +92,7 @@ export default function OrdersTable() {
               <div className="flex items-center gap-3">
                 <div className="avatar">
                   <div className="mask mask-squircle w-12 h-12">
-                    <img
-                      src="/tailwind-css-component-profile-4@56w.png"
-                      alt="Avatar Tailwind CSS Component"
-                    />
+                    <img src={avatar} alt="Avatar Tailwind CSS Component" />
                   </div>
                 </div>
                 <div>
@@ -132,10 +124,7 @@ export default function OrdersTable() {
               <div className="flex items-center gap-3">
                 <div className="avatar">
                   <div className="mask mask-squircle w-12 h-12">
-                    <img
-                      src="/tailwind-css-component-profile-5@56w.png"
-                      alt="Avatar Tailwind CSS Component"
-                    />
+                    <img src={avatar} alt="Avatar Tailwind CSS Component" />
                   </div>
                 </div>
                 <div>
@@ -159,13 +148,7 @@ export default function OrdersTable() {
         </tbody>
         {/* foot */}
         <tfoot>
-          <tr>
-            <th></th>
-            <th>Name</th>
-            <th>Job</th>
-            <th>Favorite Color</th>
-            <th></th>
-          </tr>
+      
         </tfoot>
       </table>
     </div>
