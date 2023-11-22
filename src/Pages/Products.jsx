@@ -71,7 +71,6 @@ export default function Products() {
 
       {isModalOpen && (
         <ProductViewModal
-     
           productId={selectedProductId}
           closeModal={closeModal}
         />

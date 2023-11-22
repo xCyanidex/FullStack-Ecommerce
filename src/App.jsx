@@ -12,6 +12,7 @@ import {
 import Products from './Pages/Products';
 import { useEffect } from 'react';
 import Orders from './Pages/Orders';
+import Dashboard from './Pages/Dashboard';
 
 
     function ScrollToTop() {
@@ -33,8 +34,9 @@ function App() {
         <ScrollToTop />
         <NavDrawer>
           <Routes>
+            <Route path={"/"} element={<Dashboard/>} />
             <Route path={"/products"} element={<Products />} />
-            <Route path={"/orders"} element={<Orders/>} />
+            <Route path={"/orders"} element={<Orders />} />
           </Routes>
         </NavDrawer>
       </BrowserRouter>
